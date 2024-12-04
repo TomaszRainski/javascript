@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Zadanie 16</title>
+    <meta charset="utf-8">
+    <style>
+        .result {
+            color: navy;
+            font-size: 28px;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <script language="JavaScript">
+        var a = parseInt(prompt("Podaj pierwszą liczbę A=", ""));
+        var b = parseInt(prompt("Podaj drugą liczbę B=", ""));
+
+        var wynik = (a+b)*(a+b)*(a+b);
+        var czesc1 = a*a*a;
+        var czesc2 = 3 *(a*a) * b;
+        var czesc3 = 3 * a * (b*b);
+        var czesc4 = b*b*b;
+        var suma = czesc1 + czesc2 + czesc3 + czesc4;
+
+        document.write("<div class='result'>wczytane liczby: A=" + a + " B=" + b + "</div>");
+        document.write("<div class='result'>(" + a + " + " + b + ")^3 = " + a + "^3 + 3*(" + a + ")^2*(" + b + ") + 3*(" + a + ")*(" + b + ")^2 + " + b + "^3 = " + czesc1 + " + " + czesc2 + " + " + czesc3 + " + " + czesc4 + " = " + suma + "</div>");
+    </script>
+</body>
+
+</html>

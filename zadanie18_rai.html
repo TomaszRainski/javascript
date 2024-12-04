@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Użycie fukcji </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="color:navy;font-size:50px;">
+        <script language="JavaScript">
+            var a_rai = parseFloat(prompt("a=", ""));
+            var b_rai = parseFloat(prompt("b=", ""));
+            function dodawanie_rai(a_rai, b_rai) {
+                return a_rai + b_rai;
+            }
+            function odejmowanie_rai(a_rai, b_rai) {
+                return a_rai - b_rai;
+            }
+            function mnozenie_rai(a_rai, b_rai) {
+                return a_rai * b_rai;
+            }
+            function od_kwadratu_rai(a_rai, b_rai) {
+                return (a_rai * a_rai)+ (b_rai * b_rai);
+            }         
+            document.write("suma=" + dodawanie_rai(a_rai, b_rai) + "<br>");
+            document.write("odejmowanie=" + odejmowanie_rai(a_rai, b_rai) + "<br>");
+            document.write("mnozenie=" + mnozenie_rai(a_rai, b_rai) + "<br>");
+            document.write("do kwadratu=" + od_kwadratu_rai(a_rai, b_rai) + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>

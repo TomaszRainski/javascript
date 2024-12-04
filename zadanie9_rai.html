@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie9 Rainski</title>
+        <script type="text/javascript">
+            function show_prompt() {
+                var name = prompt("Napisz imię", "Imię Nazwisko");
+                if (name != null && name != "") {
+                    document.write("Witaj " + name + "! jak się masz?");
+                }
+            }
+        </script>
+</head>
+<body>
+    Zastosowanie Prompt Box: <br>
+    Jest używany kiedy użytkownik ma wpisać coś np. zanim wejdzie w dany moduł strony. Np. hasło.
+    Użytkownik po wpisaniu wartość może nacisnął „OK.” albo „Cancel” Jeżeli użytkownik kliknie „OK.”
+    metoda zwraca wpisaną wartość, a w przeciwnym wypadku zwraca null.<br>
+    <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+</body>
+</html>

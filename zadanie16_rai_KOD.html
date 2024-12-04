@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_rainski() {
+            window.close()
+        }
+        21
+    </script>
+</head>
+
+<body>
+    <form>
+        <textarea name="rainski" cols="120" rows="29" readonly>
+    <!DOCTYPE html>
+    <html lang="pl">
+    
+    <head>
+        <title>Zadanie 16</title>
+        <meta charset="utf-8">
+        <style>
+            .result {
+                color: navy;
+                font-size: 28px;
+                width: 100%;
+                display: block;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <script language="JavaScript">
+            var a = parseInt(prompt("Podaj pierwszą liczbę A=", ""));
+            var b = parseInt(prompt("Podaj drugą liczbę B=", ""));
+
+            var wynik = (a + b) * (a + b) * (a + b);
+            var czesc1 = a * a * a;
+            var czesc2 = 3 * (a * a) * b;
+            var czesc3 = 3 * a * (b * b);
+            var czesc4 = b * b * b;
+            var suma = czesc1 + czesc2 + czesc3 + czesc4;
+
+            document.write("<div class='result'>wczytane liczby: A=" + a + " B=" + b + "</div>");
+            document.write("<div class='result'>(" + a + " + " + b + ")^3 = " + a + "^3 + 3*(" + a + ")^2*(" + b + ") + 3*(" + a + ")*(" + b + ")^2 + " + b + "^3 = " + czesc1 + " + " + czesc2 + " + " + czesc3 + " + " + czesc4 + " = " + suma + "</div>");
+        </script>
+    </body>
+    
+    </html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_rainski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

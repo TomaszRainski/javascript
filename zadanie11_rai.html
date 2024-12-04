@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Zadanie 11</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="result" style="color:rgb(0, 255, 85);font-size:56px;">
+        <script language="JavaScript">
+            var D1_rai = prompt("Pierwsza data (D1_rai):", "");
+            var D2_rai = prompt("Druga data (D2_rai):", "");
+
+            var D1 = parseFloat(D1_rai);
+            var D2 = parseFloat(D2_rai);
+
+            var iloscSekund = (D1 - D2) * 24 * 60 * 60;
+            document.getElementById("result").innerHTML = "Ilość sekund: " + iloscSekund + " sekund";
+
+        </script>
+    </div>
+</body>
+
+</html>

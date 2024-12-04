@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Zadanie 12</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="result" style="color:rgb(0, 255, 85);font-size:30px;">
+        <script language="JavaScript">
+            var D1_rai = prompt("Pierwsza data (D1_rai):", "");
+            var G1_rai = prompt("Pierwsza godzina (G1_rai):", "");
+            var D2_rai = prompt("Druga data (D2_rai):", "");
+            var G2_rai = prompt("Druga godzina (G2_rai):", "");
+
+            var D1 = parseInt(D1_rai);
+            var G1 = parseInt(G1_rai);
+            var D2 = parseInt(D2_rai);
+            var G2 = parseInt(G2_rai);
+
+            var iloscSekund = ((D1 - D2) * 24 * 60 * 60) + ((G1 - G2) * 60 * 60);
+            document.getElementById("result").innerHTML = "Ilość sekund: " + iloscSekund + " sekund";
+        </script>
+    </div>
+</body>
+
+</html>
